@@ -44,3 +44,5 @@ $ php composer.phar  install
 * [ss-panel](https://github.com/orvice/ss-panel)
 * @orvice for developing the original ss-panel
 
+###LICENSE
+GNU GPL
