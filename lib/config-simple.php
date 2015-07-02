@@ -1,12 +1,12 @@
 <?php
 /*
- * ss-panel配置文件
- * https://github.com/orvice/ss-panel
- * Author @orvice
- * https://orvice.org
+ * The Panel Configuration file
+ * https://github.com/magikpns/ThePanel
+ * Author @orvice and modified by @frjalex/@afang01 on Twitter
+ * https://magikpns.com for VPN
  */
 
-//定义流量
+//Defines the VPN traffic max allowed
 $tokb = 1024;
 $tomb = 1024*1024;
 $togb = $tomb*1024;
@@ -14,11 +14,11 @@ $togb = $tomb*1024;
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PWD','password');
-define('DB_DBNAME','db');
+define('DB_DBNAME','radius');
 define('DB_CHARSET','utf8');
 define('DB_TYPE','mysql'); 
 /*
- * 下面的东西根据需求修改
+ * Change in order to suit your needs
  */
 
 //define Plan
@@ -31,9 +31,9 @@ $check_min = 1;
 $check_max = 100;
 
 //name
-$site_name = "ss-panel";
-$site_url  = "https://panel.com/";
-$salt = "ss-panel";
+$site_name = "ThePanel";
+$site_url  = "https://magikpns.com/";
+$salt = "ThePanel";
 
 //用户注册后获得的邀请码最低最高
 //都设置为0用户就不能邀请
