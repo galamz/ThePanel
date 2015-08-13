@@ -17,13 +17,13 @@ The Panel
 * FreeRADIUS从和ss-panel相同的数据库里读取用户名密码
 
 ### Install
-* Import sql/*.sql to your **FreeRadius** database
-* Rename lib/config-sample.php to config.php,and edit the database infomation. **Note**: Point your db directly to whatever FreeRadius uses for authentication and accounting. Otherwise it wont work.
+* 导入 sql/*.sql to your **FreeRadius** database
+* Rename lib/config-sample.php to config.php,然后写入你的数据库配置。注意：这里的数据库和FreeRADIUS在同一个数据库。
 * Fasten your seatbelt and enjoy.
 
 ### Admin
-* The users whose uids are 1 and 2 are Admins by default.
-* You can Add User ID into table 'ss_user_admin' yourself to appoint your admins.
+* uid为1和2的用户均为admin.
+* 你可以自己更新uid表。
 
 ### Send mail using mail-gun
 Run:
