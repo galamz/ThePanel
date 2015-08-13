@@ -1,13 +1,9 @@
 The Panel
 ========
-##Currently unavailable and under developement
-A fork of [ss-panel](https://github.com/orvice/ss-panel) version 2 which added PPTP VPN and IPsec VPN native authentication and accounting using freeradius.
+##目前还在开发中
+一个从[https://github.com/orvice/ss-panel](ss-panel) fork过来的分支。**相对原版ss-panel增加了管理FreeRadius认证的VPN服务器，以及按月/季度/年份计费和中文支付宝/Paypal接口功能。**
+目前的版本仅实现按时间计费，FreeRadius认证功能，最好用于VPN服务器集群管理而非ShadowSocks服务器集群管理。
 
-Note that this software is opensourced by MaGiK Private Network Solutions Ltd, a network solutions company. We originally developed The Panel simply as an add-on to support VPN management through ss-panel. We sell VPNs and WE USE THIS PORTAL NATIVELY. Different than other VPN sellers, we think that everything should be opensource and should be crystal clear for technical users and geeks. So we made our decision to opensource our module to the outside world, hoping that what we do would make a change, even little, to the ugly internet condition of China.
-
-If you are not so familiar with PHP, FreeRadius and VPN stuffs and cannot afford setting up a VPN cluster on your own, Use our service: [MaGiK VPN](https://magikpns.com/vpn"). We charge at a fairly low rate, for only ￥25 CNY per month, which we believe every ITer can afford.
-
-If you simply want to show your support or donate some money, buy our VPN to support us. Thank you and have fun messing with The Panel.
 [Demo](https://portal.magikpns.com) [中文安装文档](https://github.com/magikpns/ThePanel/wiki/Install-Guide-zh_cn)
 
 
@@ -15,10 +11,10 @@ If you simply want to show your support or donate some money, buy our VPN to sup
 ### Requirements
 * PHP >= 5.4
 * PDO Extension
-* FreeRadius Set up and running correctly on the same host
-* Mysql-Server, Php-Mysql, and Freeradius-Mysql installed and running correctly
-* Website root directory permission set to '711' aka 'universally writable'
-* FreeRadius SQL Table in the same Mysql database with The Panel SQL Tables
+* 同一服务器上正确安装配置的FreeRADIUS服务器
+* Mysql-Server, Php-Mysql, and Freeradius-Mysql 已经被安装和配置/freeradius使用MySQL作为数据库
+* 网站根目录权限设置为'711' aka 'universally writable'
+* FreeRADIUS从和ss-panel相同的数据库里读取用户名密码
 
 ### Install
 * Import sql/*.sql to your **FreeRadius** database
