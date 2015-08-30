@@ -4,7 +4,7 @@ The Panel
 一个从[https://github.com/orvice/ss-panel](ss-panel) fork过来的分支。**相对原版ss-panel增加了管理FreeRadius认证的VPN服务器，以及按月/季度/年份计费和中文支付宝/Paypal接口功能。**
 目前的版本仅实现按时间计费，FreeRadius认证功能，最好用于VPN服务器集群管理而非ShadowSocks服务器集群管理。
 
-[Demo](https://portal.magikpns.com) [中文安装文档](https://github.com/magikpns/ThePanel/wiki/Install-Guide-zh_cn)
+[Demo](https://www.magikvpn.com) [中文安装文档](https://github.com/magikpns/ThePanel/wiki/Install-Guide-zh_cn)
 
 
 
